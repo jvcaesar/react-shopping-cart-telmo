@@ -12,7 +12,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 150px;
+  height: 75px;
   position: relative;
 }
 .overlay {                /* Overlays a darker shade on top of the cover image */
@@ -36,7 +36,7 @@ nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;   /* moves the h2 element to the left and ul element to the right */
-  padding: 50px 60px 0 60px;        /* padding top, right, bottom & left */
+  padding: 25px 60px 0 60px;        /* padding top, right, bottom & left */
 }
 nav li {
   list-style: none;
@@ -64,5 +64,40 @@ li a {
   background-color: royalblue;
   color: #fff;
   cursor: pointer;
+  text-decoration: none;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  padding-bottom: 100px;
+}
+.prod1Image,
+.prod2Image,
+.prod3Image,
+.prod4Image {
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+}
+.addToCart {
+  position: absolute;
+  width: 100%;
+  background-color: darkgray;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+  cursor: pointer;
+  text-align: center;
+}
+.prod1Image:hover .prod1,
+.prod2Image:hover .prod2,
+.prod3Image:hover .prod3,
+.prod4Image:hover .prod4 {
+  bottom: 47px;
+  opacity: 1;
+  padding: 10px;
   text-decoration: none;
 }

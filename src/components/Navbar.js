@@ -12,8 +12,8 @@ const Navbar = () => {
                 <li><a href='#'>Home</a></li>
                 <li><a href='#'>About</a></li>
                 <li className='cart'><a href='#'>
-                    <IoIosCart color='black' font-size='20px' 
-                    style={{ "vertical-align": "bottom" }}
+                    <IoIosCart color='black' fontSize='20px' 
+                    style={{ "verticalAlign": "bottom" }}
                     />
                     <IoMdCart />
                     Cart<span> 0</span></a>

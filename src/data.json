@@ -1,0 +1,36 @@
+{
+    "products": [
+      {
+        "_id": "prod1",
+        "image": "/images/kids-t-shirt.jpg",
+        "title": "Children's T-shirt light blue",
+        "description": "This is for all the latest trends, no matter who you are, where you’re from and what you’re up to. Exclusive to ASOS, our universal brand is here for you, and comes in all our fit ranges: ASOS Curve, Tall, Petite and Maternity. Created by us, styled by you.",
+        "availableSizes": ["X", "L", "XL", "XXL"],
+        "price": 19.90
+      },
+      {
+        "_id": "prod2",
+        "image": "/images/kids-whale-shirt.jpg",
+        "title": "Children's T-shirt dark blue",
+        "description": "This is for all the latest trends, no matter who you are, where you’re from and what you’re up to. Exclusive to ASOS, our universal brand is here for you, and comes in all our fit ranges: ASOS Curve, Tall, Petite and Maternity. Created by us, styled by you.",
+        "availableSizes": ["X", "L", "XL", "XXL"],
+        "price": 9.90
+      },
+      {
+        "_id": "prod3",
+        "image": "/images/hightop-lighted-sneakers.jpg",
+        "title": "Red shoes - High Top",
+        "description": "This is for all the latest trends, no matter who you are, where you’re from and what you’re up to. Exclusive to ASOS, our universal brand is here for you, and comes in all our fit ranges: ASOS Curve, Tall, Petite and Maternity. Created by us, styled by you.",
+        "availableSizes": ["X", "L", "XL", "XXL"],
+        "price": 89.90
+      },
+      {
+        "_id": "prod4",
+        "image": "/images/childs-raccoon-tee.jpg",
+        "title": "Children's Racoon T-shirt",
+        "description": "This is for all the latest trends, no matter who you are, where you’re from and what you’re up to. Exclusive to ASOS, our universal brand is here for you, and comes in all our fit ranges: ASOS Curve, Tall, Petite and Maternity. Created by us, styled by you.",
+        "availableSizes": ["X", "L", "XL", "XXL"],
+        "price": 35.00
+      }
+    ]
+}
