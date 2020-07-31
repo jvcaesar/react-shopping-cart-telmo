@@ -1,38 +1,68 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header {
+  background-image: url('./images/childs-raccoon-tee.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 150px;
+  position: relative;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.overlay {                /* Overlays a darker shade on top of the cover image */
+  position: absolute;
+  z-index: 1;             /* on top (in front) of everything */
+  top: 0;                 /* top, left, right, bottom= 0, is to stretch the image overlay on top of the header */
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  padding: 0 !important;
+  margin: 0 !important;
+  background-color: rgba(10, 10, 10, 0.2);    /* Color of the shadow */
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav {
+  position: absolute;
+  z-index: 2;             /*  */
+  top: 0;                 /*  */
+  left: 0;
+  right: 0;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+  justify-content: space-between;   /* moves the h2 element to the left and ul element to the right */
+  padding: 50px 60px 0 60px;        /* padding top, right, bottom & left */
 }
-
-.App-link {
-  color: #61dafb;
+nav li {
+  list-style: none;
+  display: inline-block;
+  padding-right: 10px;
+  padding-left: 10px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+li a {
+  padding: 5px;
+  background-color: #fff;
+  text-decoration: none;
+}
+.cart IoMdCart {
+  color: red;
+  vertical-align: 'bottom';
+  font-size: '30px';
+  padding-right: '5px'
+}
+.cart IoIosCart {
+  vertical-align: 'bottom';
+  font-size: '20px';
+  padding-right: '5px'
+}
+.cart a {
+  background-color: royalblue;
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
 }
