@@ -1,8 +1,19 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { connect } from 'react-redux'
 import { IoIosCart } from 'react-icons/io'
 import { IoMdCart } from 'react-icons/io'
+import { getNumbers } from '../actions/getAction'
 
-const Navbar = () => {
+// The connect() function connects a React component to a Redux store.
+
+const Navbar = (props) => {
+    console.log('Navbar props: ', props)
+    const numberOfItems = props.basketProps.basketNumbers
+
+/*     useEffect(() => {
+        getNumbers()
+    }, []) */
+
     return (
         <header className="App-header">
             <div className='overlay'></div>
@@ -16,7 +27,7 @@ const Navbar = () => {
                     style={{ "verticalAlign": "bottom" }}
                     />
                     <IoMdCart />
-                    Cart<span> 0</span></a>
+                    Cart<span> {numberOfItems}</span></a>
                 </li>
             </ul>
             </nav>
@@ -24,4 +35,8 @@ const Navbar = () => {
     )
 }
 
-export default Navbar
+const mapStateToProps = state => ({
+    basketProps: state.basketState
+})
+
+export default connect(mapStateToProps, { getNumbers })(Navbar)
