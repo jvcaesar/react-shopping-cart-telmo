@@ -15,7 +15,7 @@ const Products = (props) => {
                 <div className={product._id+Image} key={product._id}>
                     <img src={product.image} alt={product.title} />
                     <h3>{product.title}</h3>
-                    <h3>{product.price}</h3>
+                    <h3>€{product.price/100}</h3>
                     <a onClick={() => props.addBasket(product._id)} className={addToCart+product._id} href='#'>Add to Cart</a>
                 </div>
             ))}

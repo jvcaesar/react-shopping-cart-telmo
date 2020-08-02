@@ -141,12 +141,12 @@ li a {
   display: flex;
   align-items: center;
 }
-.quantity .icon1 {
+.quantity .decrease {
   margin-right: 3px;
   cursor: pointer;
 }
-.quantity .icon2 {
-  margin-left: 3px;
+.quantity .increase {
+  margin-left: 4px;
   cursor: pointer;
 }
 .total {
